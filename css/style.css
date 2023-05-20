@@ -1,115 +1,177 @@
 /* reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 li {
-    list-style: none;
+  list-style: none;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
+html,
 body {
-    min-width: 326px;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#Container {
+  overflow: scroll;
+  width: 100%;
+  height: 100vh;
+  scroll-snap-type: y mandatory;
+}
+
+.scroll {
+  height: 100vh;
+  scroll-snap-align: start;
+  position: relative;
+  /* border: 1px solid; */
 }
 
 /* header */
 
-header {
-    width: 100%;
-    height: 100vh;
-    background-color: rgba(250, 0, 0, 0.5);
-}
-
 header div#flexWrap1 {
-
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 header div#toggle {
-    cursor: pointer;
-    float: left;
+  cursor: pointer;
+  float: left;
 }
-
+header div#toggle img {
+  width: 4vw;
+}
+/* header userInfo */
 header div#welcome {
-    float: right;
-    font-weight: bold;
+  float: right;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  font-size: 3vw;
 }
 
-
+header div#welcome h4 a {
+  margin-right: 5vw;
+  color: white;
+}
+header div#welcome h4 a:hover {
+  text-decoration: underline;
+  text-shadow: 1px 0 10px black;
+}
 header nav#headerBackground {
-    height: 100vh;
-    position: relative;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  /* border: 1px solid; */
 }
 
 header nav#headerBackground h1#navText {
-    text-align: center;
-    float: right;
-    position: absolute;
-    font-size: 20vw;
-    bottom: 10vh;
-    right: 50px;
-    z-index: 0;
-
+  text-align: center;
+  float: center;
+  position: absolute;
+  font-size: 16vw;
+  bottom: 5vh;
+  width: 100%;
+}
+header nav#headerBackground h1#navText img {
+  max-width: 60%;
 }
 
 header nav#headerBackground h1#navText a {
-    color: black;
-
-
-
+  color: black;
 }
-
 
 header nav#headerBackground h1#navText a:hover {
-   color: white;
-
+  text-shadow: 5px 0 0 red;
 }
-
+/* landing */
 header nav ul {
-    /* margin: 50px; */
-    padding: 50px;
-    display: none;
-
-
+  /* margin: 50px; */
+  padding: 10%;
+  display: none;
 }
 
 header nav ul li {
-    padding: 30px;
-
+  padding: 10%;
 }
 
+header nav ul li:hover {
+  text-shadow: 0 0 30px white;
+}
 header nav ul li a {
-    color: white;
-    font-size: 50px;
-
+  color: white;
+  font-size: 10vw;
 }
+/* landing */
 
-@keyframes go-left-right {
-    from {
-        left: -47vw;
-    }
-
-    /* left 0px 부터 애니메이션 시작 */
-    to {
-        left: 50vw;
-
-    }
+@media screen and (min-width: 768px) {
 }
-@media screen and (min-width:768px) {
-
-        header nav#headerBackground h1#navText {
-            animation: go-left-right 3s infinite alternate;
-
-        }
-    }
-
-
 
 /* header */
+/* container */
+#mainPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#wrapper {
+  width: 80vw;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  align-items: center;
+  gap: 10px;
+}
+
+#wrapper div {
+  text-align: center;
+  width: 100%;
+}
+#wrapper div:hover {
+  box-shadow: 0 0 10px white, 0 0 20px black;
+}
+
+#wrapper div a img {
+  width: 90%;
+}
+@media screen and (min-width: 1200px) {
+  #wrapper {
+    margin: 5% auto;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+}
+
+footer {
+  border: 1px solid;
+  text-align: center;
+}
+
+footer h2 {
+  padding: 10vh 0;
+  font-size: 50px;
+}
+footer div img {
+  margin: 50px 0;
+  border-radius: 15px;
+  border: 1px solid black;
+  box-shadow: 0 0 20px black;
+}
+footer div a img:hover {
+  box-shadow: 0 0 50px black;
+}
+footer p {
+  padding: 100px 0;
+  font-size: 40px;
+  font-weight: bold;
+}

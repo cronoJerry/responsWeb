@@ -1,39 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>login</title>
-    <link rel="stylesheet" href="../css/login.css">
-</head>
+    <link rel="stylesheet" href="../css/login.css" />
+  </head>
 
-<body>
+  <body>
     <div id="wrapper">
-        <div id="box">
-            <a
-                href="https://accounts.google.com/v3/signin/confirmidentifier?dsh=S1912662483%3A1684389071705165&hl=ko&ifkv=Af_xneG-AmVEU3ciRyavo304mN5jd85z0oEoZLTEQn3_v72gZUNSdgUff7Az4OYUPvJAI6pPavozLQ&flowName=GlifWebSignIn&flowEntry=ServiceLogin"><button
-                    id="google">Continue
-                    with Google</button></a>
-            <p id="or"><i>or</i></p>
-            <form action="nothing" method="post">
-                <input type="text" name="password" placeholder="Email" id="firstInput"><br />
-                <input type="password" name="password" placeholder="Password" id="password"><br />
-            </form>
+      <div id="box">
+        <a
+          href="https://accounts.google.com/v3/signin/confirmidentifier?dsh=S1912662483%3A1684389071705165&hl=ko&ifkv=Af_xneG-AmVEU3ciRyavo304mN5jd85z0oEoZLTEQn3_v72gZUNSdgUff7Az4OYUPvJAI6pPavozLQ&flowName=GlifWebSignIn&flowEntry=ServiceLogin"
+          ><button id="google">Continue with Google</button></a
+        >
+        <p id="or"><i>or</i></p>
+        <form action="nothing" method="post">
+          <input
+            type="text"
+            name="password"
+            placeholder="Email"
+            id="firstInput"
+          /><br />
+          <input
+            type="password"
+            name="password"
+            placeholder="Password"
+            id="password"
+          /><br />
+        </form>
 
-            <a href="../html/index.html"><button id="login">Log in</button></a>
+        <a href="../html/index.html"><button id="login">Log in</button></a>
 
-            <div id="smallWrap">
-                <p><a href="#">Use single sign-on</a></p>
-                <p><a href="#">Reset Password</a></p>
-                <p>No account?&nbsp<a href="#">Create one</a></p>
-            </div>
-
-
+        <div id="smallWrap">
+          <p><a href="#">Use single sign-on</a></p>
+          <p><a href="#">Reset Password</a></p>
+          <p>No account?&nbsp<a href="#">Create one</a></p>
         </div>
+      </div>
     </div>
     <script src="../js/login.js" defer></script>
-</body>
-
+  </body>
 </html>

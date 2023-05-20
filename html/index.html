@@ -1,38 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>myShoppingMall</title>
-    <link rel="stylesheet" href="../css/style.css">
-</head>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
 
-<body>
-    <!--mobile first  -->
-    <header>
+  <body>
+    <div id="Container">
+      <!--mobile first  -->
+      <header class="scroll">
         <!-- toggle pop up -->
         <nav id="headerBackground">
-            <div id="flexWrap1">
-                <div id="toggle"><img src="../img/but_toggle.png" alt="toggle"></div>
-                <div id="welcome"></div>
+          <div id="flexWrap1">
+            <div id="toggle">
+              <img src="../img/but_toggle.png" alt="toggle" />
             </div>
-            <ul id="landing">
-                <li><a href="#">HOME</a></li>
-                <li><a href="../html/login.html">LOGIN</a></li>
-                <li><a href="#">SHOP</a></li>
-                <li><a href="#">WHEN WE SATRT</a></li>
-                <li><a href="#">WHO ARE WE</a></li>
-            </ul>
-            <h1 id="navText"><a href="#">great</a></h1>
+            <div id="welcome"></div>
+          </div>
+          <ul id="landing">
+            <li onclick="reloading()"><a href="#">HOME</a></li>
+            <li><a href="../html/login.html">LOGIN</a></li>
+            <li><a href="#wrapper">SHOP</a></li>
+            <li><a href="#aboutUs">About Us</a></li>
+          </ul>
+          <h1 id="navText">
+            <img
+              src="../img/KakaoTalk_Photo_2023-05-20-14-24-09.png"
+              alt=""
+            /><br />
+            <a href="https://smartstore.naver.com/runningcloud" target="_blank"
+              >달구점빵</a
+            >
+          </h1>
         </nav>
-
-    </header>
-    <section id="mainPage">
-    </section>
-    <footer></footer>
-    <script src="../js/main.js"></script>
-</body>
-
+      </header>
+      <section id="mainPage" class="scroll">
+        <div id="wrapper">
+          <!--make div with Js  -->
+        </div>
+      </section>
+      <footer class="scroll">
+        <h2 id="aboutUs">About Us</h2>
+        <div>
+          <a href="https://smartstore.naver.com/runningcloud" target="_black"
+            ><img src="../img/logo.jpeg" alt="logo"
+          /></a>
+        </div>
+        <p>매일 골라 입고 싶은 예쁜 옷이 있는 달구점빵</p>
+      </footer>
+      <script src="../js/main.js"></script>
+    </div>
+  </body>
 </html>
