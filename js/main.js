@@ -89,3 +89,4 @@ function changeImg() {
 function reloading() {
   location.reload();
 }
+
